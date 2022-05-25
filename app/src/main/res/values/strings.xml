@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">signlingo</string>
+    <string name="app_name">SignLingo</string>
+    <string name="exercise_title">Hand Sign of Letter A</string>
+    <string name="exercise_subtitle">Form the hand sign and capture it!</string>
+    <string name="submit_and_check">SUBMIT AND CHECK</string>
+    <string name="not_quite_sure">Not quite sure?</string>
+    <string name="retry">RETRY</string>
+    <string name="capture">Capture Hand Sign with Camera</string>
+    <string name="continue_learning">CONTINUE LEARNING</string>
+    <string name="true_title">That\'s True!</string>
+    <string name="true_subtitle">Congratulations! You mastered the hand sign of this letter! Keep going!</string>
+    <string name="wrong_title">Oopps, Wrong!</string>
+    <string name="wrong_subtitle">Oopps! You make a wrong hand sign this letter! Try Again!</string>
+    <string name="try_again">TRY AGAIN</string>
 </resources>

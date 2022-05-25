@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.view.ExerciseActivity">
+
+    <TextView
+        android:id="@+id/tv_exercise_title"
+        style="@style/SectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/exercise_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exercise_subtitle"
+        style="@style/SectionSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/exercise_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_exercise_title" />
+
+    <com.signlingo.customview.CameraButton
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_exercise_subtitle" />
+
+    <ImageView
+        android:id="@+id/img_capture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_camera"
+        app:layout_constraintEnd_toEndOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera"
+        app:layout_constraintTop_toTopOf="@id/btn_camera"
+        app:srcCompat="@drawable/ic_capture"
+        android:contentDescription="@string/capture"/>
+
+    <com.signlingo.customview.RoundedButton
+        android:id="@+id/btn_submit"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/signlingo_green"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/submit_and_check"
+        app:layout_constraintEnd_toEndOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera"
+        app:layout_constraintTop_toBottomOf="@id/btn_camera" />
+
+    <TextView
+        android:id="@+id/tv_not_sure"
+        style="@style/SectionSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/not_quite_sure"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/btn_submit"
+        app:layout_constraintStart_toStartOf="@id/btn_submit"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+
+    <com.signlingo.customview.OutlineButton
+        android:id="@+id/btn_retry"
+        style="@style/ButtonText"
+        android:textColor="@color/signlingo_green"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/retry"
+        app:layout_constraintEnd_toEndOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_sure" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

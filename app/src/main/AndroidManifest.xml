@@ -10,6 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Signlingo">
         <activity
+            android:name=".main.view.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.view.FalseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.view.TrueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.view.ExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.view.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".auth.view.RegisterActivity"
             android:exported="true" />
         <activity
@@ -17,13 +39,7 @@
             android:exported="true" />
         <activity
             android:name=".main.view.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -19,12 +19,12 @@
             android:id="@+id/btn_left"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/ic_baseline_arrow_left"
-            android:background="@drawable/circle_button"/>
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_baseline_arrow_left" />
 
         <com.google.android.material.card.MaterialCardView
-            style="@style/themeCardChar"
             android:id="@+id/learncard_left"
+            style="@style/themeCardChar"
             android:layout_width="50dp"
             android:layout_height="50dp">
 
@@ -35,16 +35,17 @@
 
                 <TextView
                     android:id="@+id/tv_learn_left"
+                    style="@style/CharacterTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/a" />
+                    tools:text="@string/a" />
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            style="@style/themeCardChar"
             android:id="@+id/learncard_mid"
+            style="@style/themeCardChar"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:backgroundTint="@color/blue">
@@ -56,9 +57,12 @@
 
                 <TextView
                     android:id="@+id/tv_learn_mid"
+                    style="@style/CharacterTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/b" />
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    tools:text="@string/b" />
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -76,9 +80,10 @@
 
                 <TextView
                     android:id="@+id/tv_learn_right"
+                    style="@style/CharacterTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/c" />
+                    tools:text="@string/c" />
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -87,8 +92,8 @@
             android:id="@+id/btn_right"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/ic_baseline_arrow_right"
-            android:background="@drawable/circle_button"/>
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_baseline_arrow_right" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

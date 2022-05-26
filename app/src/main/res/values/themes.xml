@@ -13,4 +13,10 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="themeCardChar" parent="Widget.Material3.CardView.Outlined">
+        <item name="strokeColor">@color/blue</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cardCornerRadius">7dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
 </resources>

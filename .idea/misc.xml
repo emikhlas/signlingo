@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/char_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/circle_button_left.xml" value="0.3828125" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_detail.xml" value="0.536" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_main.xml" value="0.24623115577889448" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/circle_button_left.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/item_char.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>

@@ -25,12 +25,20 @@
             android:name=".auth.view.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/ThemeSplash">
-            <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+          
+        <activity
+            android:name=".main.view.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.view.MainActivity"
+            android:exported="true"/>
+            
         <activity
             android:name=".auth.view.RegisterActivity"
             android:exported="true" />

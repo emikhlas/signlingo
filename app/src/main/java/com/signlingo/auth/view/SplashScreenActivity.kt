@@ -19,7 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun showHome() {
         Executors.newSingleThreadScheduledExecutor().schedule( {
-            startActivity(Intent(this@SplashScreenActivity, CameraActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
             finish()
         }, 2, TimeUnit.SECONDS)
     }

@@ -25,6 +25,12 @@
         <item name="android:textSize">16sp</item>
     </style>
 
+    <style name="CharacterTitle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <style name="SectionSubtitle" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="android:fontFamily">@font/avenir</item>
         <item name="android:textColor">@color/grey</item>

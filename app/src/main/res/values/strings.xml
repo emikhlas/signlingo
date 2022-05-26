@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">SignLingo</string>
-    <string name="exercise_title">Hand Sign of Letter A</string>
+    <string name="exercise_title">Hand Sign of Letter %1$s</string>
     <string name="exercise_subtitle">Form the hand sign and capture it!</string>
     <string name="submit_and_check">SUBMIT AND CHECK</string>
     <string name="not_quite_sure">Not quite sure?</string>

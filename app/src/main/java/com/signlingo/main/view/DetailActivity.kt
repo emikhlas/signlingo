@@ -1,5 +1,6 @@
 package com.signlingo.main.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -26,6 +27,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         binding.apply {
             btnLeft.setOnClickListener(this@DetailActivity)
             btnRight.setOnClickListener(this@DetailActivity)
+            btnQuiz.setOnClickListener(this@DetailActivity)
         }
     }
 
@@ -72,6 +74,11 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
                     position += 1
                 }
                 changePosition()
+            }
+            R.id.btn_quiz -> {
+                val intent = Intent(this@DetailActivity, CameraActivity::class.java)
+                intent.putExtra(CameraActivity.EXTRA_POSITION, position)
+                startActivity(intent)
             }
         }
     }

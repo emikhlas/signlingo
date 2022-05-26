@@ -36,10 +36,6 @@
             android:name=".main.view.DetailActivity"
             android:exported="true" />
         <activity
-            android:name=".main.view.MainActivity"
-            android:exported="true"/>
-            
-        <activity
             android:name=".auth.view.RegisterActivity"
             android:exported="true" />
         <activity

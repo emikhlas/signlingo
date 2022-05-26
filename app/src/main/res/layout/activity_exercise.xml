@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/signlingo_green"
+        android:backgroundTint="@color/green"
         android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -81,7 +81,7 @@
     <com.signlingo.customview.OutlineButton
         android:id="@+id/btn_retry"
         style="@style/ButtonText"
-        android:textColor="@color/signlingo_green"
+        android:textColor="@color/green"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"

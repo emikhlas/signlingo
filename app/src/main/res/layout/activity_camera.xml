@@ -60,7 +60,7 @@
         style="@style/ButtonText"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:backgroundTint="@color/signlingo_green"
+        android:backgroundTint="@color/green"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/submit_and_check"
@@ -90,7 +90,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/retry"
-        android:textColor="@color/signlingo_green"
+        android:textColor="@color/green"
         app:layout_constraintEnd_toEndOf="@id/btn_camera"
         app:layout_constraintStart_toStartOf="@id/btn_camera"
         app:layout_constraintTop_toBottomOf="@id/tv_not_sure" />

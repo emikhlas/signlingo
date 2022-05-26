@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.signlingo.main.view.CameraActivity
 import com.signlingo.main.view.MainActivity
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
@@ -18,7 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
     private fun showHome() {
         Executors.newSingleThreadScheduledExecutor().schedule( {
-            startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, CameraActivity::class.java))
             finish()
         }, 2, TimeUnit.SECONDS)
     }

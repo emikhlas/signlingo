@@ -42,6 +42,7 @@
     <string name="a">A</string>
     <string name="click_to_see_the_sign_language_illustration">Click to see the sign language illustration</string>
     <string name="sign_languages">Sign Languages</string>
+    <string name="image_result">Image Result</string>
     <string-array name="data_char">
         <item>A</item>
         <item>B</item>

@@ -42,7 +42,11 @@
     <string name="a">A</string>
     <string name="click_to_see_the_sign_language_illustration">Click to see the sign language illustration</string>
     <string name="sign_languages">Sign Languages</string>
+    <string name="handsign_desc">This is the description of how to form the hand sign of letter E with your hand. It can consist of some paragraphs and must be detailed so the user can understand how to form that hand sign correctly.</string>
+    <string name="how_to_do_that">How to Do That?</string>
+    <string name="try_this_hand_sign">TRY THIS HAND SIGN</string>
     <string name="image_result">Image Result</string>
+
     <string-array name="data_char">
         <item>A</item>
         <item>B</item>

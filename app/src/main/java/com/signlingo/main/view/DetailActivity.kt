@@ -1,6 +1,7 @@
 package com.signlingo.main.view
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.signlingo.R
@@ -12,6 +13,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
     private val binding get() = _binding!!
     private var position = 0
     private lateinit var dataChar: Array<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityDetailBinding.inflate(layoutInflater)
@@ -47,6 +49,10 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
                 tvLearnRight.text = dataChar[position + 1]
             }
         }
+        val resUrl = "@drawable/${dataChar[position].lowercase()}"
+        val resourceId = resources.getIdentifier(resUrl, null, packageName)
+        Log.i("resource :", "$resUrl")
+        binding.ivHandsign.setImageResource(resourceId)
     }
 
     override fun onClick(v: View?) {

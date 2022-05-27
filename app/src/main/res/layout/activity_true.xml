@@ -37,7 +37,6 @@
             android:layout_height="wrap_content"
             android:minLines="2"
             android:textAlignment="center"
-            android:lineSpacingExtra="6dp"
             android:layout_marginTop="4dp"
             android:text="@string/true_subtitle" />
 

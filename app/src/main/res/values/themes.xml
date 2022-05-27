@@ -47,6 +47,7 @@
         <item name="android:fontFamily">@font/avenir</item>
         <item name="android:textColor">@color/grey</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">6dp</item>
     </style>
 
     <style name="themeCardChar" parent="Widget.Material3.CardView.Outlined">

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:text="@string/exercise_title"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,9 +50,9 @@
         android:layout_height="100dp"
         android:src="@drawable/ic_capture"
         app:layout_constraintBottom_toBottomOf="@+id/btn_camera"
-        app:layout_constraintEnd_toEndOf="@+id/btn_camera"
-        app:layout_constraintStart_toStartOf="@+id/btn_camera"
-        app:layout_constraintTop_toBottomOf="@+id/tv_quiz_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera"
+        app:layout_constraintTop_toBottomOf="@id/tv_quiz_subtitle"
         android:contentDescription="@string/capture" />
 
     <ImageView
@@ -90,9 +90,9 @@
         android:layout_marginTop="14dp"
         android:text="@string/not_quite_sure"
         android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/btn_camera"
-        app:layout_constraintStart_toStartOf="@+id/btn_camera"
-        app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+        app:layout_constraintEnd_toEndOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="@id/btn_camera"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit" />
 
     <com.signlingo.customview.OutlineButton
         android:id="@+id/btn_retry"

@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Muhammad Ikhlas/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_camera.xml" value="0.17831813576494426" />
-        <entry key="..\:/Users/Muhammad Ikhlas/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/drawable/button_outline.xml" value="0.1" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/drawable/circle_button.xml" value="0.1" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/drawable/edt_outline.xml" value="0.1985" />
         <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_camera.xml" value="0.264" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_detail.xml" value="0.264" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_quiz.xml" value="0.259375" />
+        <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/layout/activity_true.xml" value="0.15896739130434784" />
         <entry key="..\:/Users/Nitro 5/AndroidStudioProjects/signlingo/app/src/main/res/xml/file_paths.xml" value="0.259375" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/button_camera.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/button_outline.xml" value="0.22135416666666666" />
@@ -13,8 +18,8 @@
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/char_button.xml" value="0.3828125" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/circle_button_left.xml" value="0.3828125" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/drawable/splash_bg.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_camera.xml" value="0.2" />
-        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_detail.xml" value="0.176" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_camera.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_detail.xml" value="0.536" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_exercise.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Public/AndroidStudio/signlingo/app/src/main/res/layout/activity_main.xml" value="0.24623115577889448" />
@@ -23,7 +28,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

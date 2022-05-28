@@ -10,7 +10,7 @@
         android:id="@+id/char_container"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:gravity="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -98,12 +98,14 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/char_container">
@@ -112,6 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:layout_gravity="center">
+
             <ImageView
                 android:id="@+id/iv_handsign"
                 android:layout_width="wrap_content"
@@ -124,12 +127,12 @@
             style="@style/SectionTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_18dp"
             android:text="@string/how_to_do_that" />
 
         <TextView
             android:id="@+id/tv_handsign_desc"
-            style="@style/SectionSubtitle"
+            style="@style/Description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
@@ -142,11 +145,11 @@
             style="@style/ButtonText"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="@color/green"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="@string/try_this_hand_sign"
-            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="@id/btn_camera"
             app:layout_constraintStart_toStartOf="@id/btn_camera"
             app:layout_constraintTop_toBottomOf="@id/btn_camera" />

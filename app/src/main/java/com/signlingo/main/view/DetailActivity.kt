@@ -55,6 +55,9 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         val resourceId = resources.getIdentifier(resUrl, null, packageName)
         Log.i("resource :", "$resUrl")
         binding.ivHandsign.setImageResource(resourceId)
+
+        val listDesc = resources.getStringArray(R.array.data_description)
+        binding.tvHandsignDesc.text = listDesc[position]
     }
 
     override fun onClick(v: View?) {

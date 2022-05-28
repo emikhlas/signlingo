@@ -5,7 +5,7 @@
     <string name="exercise_subtitle">Form the hand sign and capture it!</string>
     <string name="submit_and_check">SUBMIT AND CHECK</string>
     <string name="not_quite_sure">Not quite sure?</string>
-    <string name="retry">RETRY</string>
+    <string name="retry">Click on your image to retry!</string>
     <string name="capture">Capture Hand Sign with Camera</string>
     <string name="continue_learning">CONTINUE LEARNING</string>
     <string name="true_title">That\'s True!</string>

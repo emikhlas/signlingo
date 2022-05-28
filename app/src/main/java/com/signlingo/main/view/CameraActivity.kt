@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
+import android.media.ThumbnailUtils
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -52,7 +53,9 @@ class CameraActivity : AppCompatActivity() {
     ) {
         if (it.resultCode == RESULT_OK) {
             val myFile = File(currentPhotoPath)
-            val result = BitmapFactory.decodeFile(myFile.path)
+            var result = BitmapFactory.decodeFile(myFile.path)
+            val dimension = Math.min(result.width, result.height)
+            result = ThumbnailUtils.extractThumbnail(result, dimension, dimension)
             binding.imgResult.setImageBitmap(result)
         }
     }

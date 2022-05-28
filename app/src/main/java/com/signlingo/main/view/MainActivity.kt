@@ -1,7 +1,8 @@
 package com.signlingo.main.view
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.signlingo.R
 import com.signlingo.databinding.ActivityMainBinding
@@ -16,7 +17,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val listChar = resources.getStringArray(R.array.data_char)
-        binding.rvChar.layoutManager = GridLayoutManager(this@MainActivity,5)
+        binding.rvChar.layoutManager = GridLayoutManager(this@MainActivity, 5)
         binding.rvChar.adapter = CharAdapter(listChar)
+
+        binding.btnQuickquiz.setOnClickListener {
+            val intent = Intent(this@MainActivity, QuizActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -149,10 +149,7 @@
             android:backgroundTint="@color/green"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:text="@string/try_this_hand_sign"
-            app:layout_constraintEnd_toEndOf="@id/btn_camera"
-            app:layout_constraintStart_toStartOf="@id/btn_camera"
-            app:layout_constraintTop_toBottomOf="@id/btn_camera" />
+            android:text="@string/try_this_hand_sign" />
 
     </LinearLayout>
 

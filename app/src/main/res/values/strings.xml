@@ -51,6 +51,11 @@
     <string name="image_quiz">Quiz Image</string>
     <string name="error_empty">This field is required!</string>
     <string name="hint_quiz">What letter is it?</string>
+    <string name="quickquiz_desc">Guess the letter of the given handsign picture</string>
+    <string name="quickquiz_title">Quick Quiz</string>
+    <string name="try_now">TRY NOW</string>
+    <string name="quiz_desc">Do a quick quiz to test your knowledge</string>
+    <string name="quiz">Quiz</string>
 
     <string-array name="data_char">
         <item>A</item>

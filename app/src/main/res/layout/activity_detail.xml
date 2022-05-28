@@ -1,157 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main.view.DetailActivity">
 
-    <LinearLayout
-        android:id="@+id/char_container"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/btn_left"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_baseline_arrow_left" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/learncard_left"
-            style="@style/themeCardChar"
-            android:layout_width="50dp"
-            android:layout_height="50dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/tv_learn_left"
-                    style="@style/CharacterTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="@string/a" />
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/learncard_mid"
-            style="@style/themeCardChar"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/blue">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/tv_learn_mid"
-                    style="@style/CharacterTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textSize="26sp"
-                    tools:text="@string/b" />
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/learncard_right"
-            style="@style/themeCardChar"
-            android:layout_width="50dp"
-            android:layout_height="50dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/tv_learn_right"
-                    style="@style/CharacterTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="@string/c" />
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/btn_right"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_baseline_arrow_right" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/char_container">
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/char_container"
             android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:layout_gravity="center">
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:id="@+id/iv_handsign"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                tools:src="@drawable/b" />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_left"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_button"
+                android:src="@drawable/ic_baseline_arrow_left" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/learncard_left"
+                style="@style/themeCardChar"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_learn_left"
+                        style="@style/CharacterTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/a" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/learncard_mid"
+                style="@style/themeCardChar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/blue">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_learn_mid"
+                        style="@style/CharacterTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        tools:text="@string/b" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/learncard_right"
+                style="@style/themeCardChar"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_learn_right"
+                        style="@style/CharacterTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/c" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_right"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_button"
+                android:src="@drawable/ic_baseline_arrow_right" />
         </LinearLayout>
 
-        <TextView
-            style="@style/SectionTitle"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_18dp"
-            android:text="@string/how_to_do_that" />
+            android:layout_marginVertical="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/char_container">
 
-        <TextView
-            android:id="@+id/tv_handsign_desc"
-            style="@style/Description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:text="@string/handsign_desc"
-            android:textAlignment="center"
-            android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_gravity="center">
 
-        <com.signlingo.customview.RoundedButton
-            android:id="@+id/btn_quiz"
-            style="@style/ButtonText"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginTop="18dp"
-            android:backgroundTint="@color/green"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="@string/try_this_hand_sign" />
+                <ImageView
+                    android:id="@+id/iv_handsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/b" />
+            </LinearLayout>
 
-    </LinearLayout>
+            <TextView
+                style="@style/SectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18dp"
+                android:text="@string/how_to_do_that" />
+
+            <TextView
+                android:id="@+id/tv_handsign_desc"
+                style="@style/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:text="@string/handsign_desc"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <com.signlingo.customview.RoundedButton
+                android:id="@+id/btn_quiz"
+                style="@style/ButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="@color/green"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/try_this_hand_sign" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

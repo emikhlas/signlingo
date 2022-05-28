@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.signlingo.main.view.CameraActivity
 import com.signlingo.main.view.MainActivity
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="image_result">Image Result</string>
+    <string name="quiz_title">Quick Quiz</string>
+    <string name="quiz_subtitle">Guess the letter of this hand sign!</string>
+    <string name="image_quiz">Quiz Image</string>
+    <string name="error_empty">This field is required!</string>
+    <string name="hint_quiz">What letter is it?</string>
 </resources>

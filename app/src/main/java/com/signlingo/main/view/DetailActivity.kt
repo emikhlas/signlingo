@@ -28,6 +28,8 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             btnLeft.setOnClickListener(this@DetailActivity)
             btnRight.setOnClickListener(this@DetailActivity)
             btnQuiz.setOnClickListener(this@DetailActivity)
+            learncardLeft.setOnClickListener(this@DetailActivity)
+            learncardRight.setOnClickListener(this@DetailActivity)
         }
     }
 
@@ -82,6 +84,23 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this@DetailActivity, CameraActivity::class.java)
                 intent.putExtra(CameraActivity.EXTRA_POSITION, position)
                 startActivity(intent)
+                finish()
+            }
+            R.id.learncard_left -> {
+                if (position == 0) {
+                    position = 25
+                } else {
+                    position -= 1
+                }
+                changePosition()
+            }
+            R.id.learncard_right -> {
+                if (position == 25) {
+                    position = 0
+                } else {
+                    position += 1
+                }
+                changePosition()
             }
         }
     }

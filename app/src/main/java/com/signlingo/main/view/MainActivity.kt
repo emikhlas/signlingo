@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.signlingo.R
 import com.signlingo.databinding.ActivityMainBinding
+import com.signlingo.quiz.view.QuizActivity
 
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null

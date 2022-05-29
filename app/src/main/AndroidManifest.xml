@@ -40,9 +40,6 @@
             android:name=".main.view.TrueActivity"
             android:exported="false" />
         <activity
-            android:name=".main.view.ExerciseActivity"
-            android:exported="false" />
-        <activity
             android:name=".auth.view.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/ThemeSplash">

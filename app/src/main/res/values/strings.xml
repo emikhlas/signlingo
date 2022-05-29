@@ -5,7 +5,7 @@
     <string name="exercise_subtitle">Form the hand sign and capture it!</string>
     <string name="submit_and_check">SUBMIT AND CHECK</string>
     <string name="not_quite_sure">Not quite sure?</string>
-    <string name="retry">RETRY</string>
+    <string name="retry">Click on your image to retry!</string>
     <string name="capture">Capture Hand Sign with Camera</string>
     <string name="continue_learning">CONTINUE LEARNING</string>
     <string name="true_title">That\'s True!</string>
@@ -13,7 +13,6 @@
     <string name="wrong_title">Oopps, Wrong!</string>
     <string name="wrong_subtitle">Maybe you need to learn more and more for this letter! Try Again!</string>
     <string name="try_again">TRY AGAIN</string>
-    <string name="quick_quiz">Quick Quiz</string>
     <string name="z">Z</string>
     <string name="y">Y</string>
     <string name="x">X</string>
@@ -52,10 +51,10 @@
     <string name="error_empty">This field is required!</string>
     <string name="hint_quiz">What letter is it?</string>
     <string name="quickquiz_desc">Guess the letter of the given handsign picture</string>
-    <string name="quickquiz_title">Quick Quiz</string>
+    <string name="quickquiz_title">Guess The Letter</string>
     <string name="try_now">TRY NOW</string>
     <string name="quiz_desc">Do a quick quiz to test your knowledge</string>
-    <string name="quiz">Quiz</string>
+    <string name="quiz">Quick Quiz</string>
 
     <string-array name="data_char">
         <item>A</item>

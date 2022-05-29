@@ -82,30 +82,34 @@
         app:layout_constraintStart_toStartOf="@id/btn_camera"
         app:layout_constraintTop_toBottomOf="@id/btn_camera" />
 
-    <TextView
-        android:id="@+id/tv_not_sure"
-        style="@style/Description"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit"
         android:layout_marginTop="14dp"
-        android:text="@string/not_quite_sure"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@id/btn_camera"
-        app:layout_constraintStart_toStartOf="@id/btn_camera"
-        app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <com.signlingo.customview.OutlineButton
-        android:id="@+id/btn_retry"
-        style="@style/ButtonText"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="14dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="@string/retry"
-        android:textColor="@color/green"
-        app:layout_constraintEnd_toEndOf="@id/btn_camera"
-        app:layout_constraintStart_toStartOf="@id/btn_camera"
-        app:layout_constraintTop_toBottomOf="@id/tv_not_sure" />
+        <TextView
+            android:id="@+id/tv_not_sure"
+            style="@style/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_quite_sure"
+            android:textAlignment="center"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_retry"
+            style="@style/Description"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retry"
+            android:textAlignment="center" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.signlingo.main.view
+package com.signlingo.quiz.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

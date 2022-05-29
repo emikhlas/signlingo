@@ -31,6 +31,7 @@ class CameraActivity : AppCompatActivity() {
     private lateinit var dataChar: Array<String>
     private var getFile: File? = null
     private val imageSize = 224
+    private var position = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,8 +39,10 @@ class CameraActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         dataChar = resources.getStringArray(R.array.data_char)
-        val position = intent.getIntExtra(EXTRA_POSITION, 0)
+        position = intent.getIntExtra(EXTRA_POSITION, 0)
         val title = getString(R.string.exercise_title, dataChar[position])
+
+
 
         if (!allPermissionsGranted()) {
             ActivityCompat.requestPermissions(
@@ -112,6 +115,7 @@ class CameraActivity : AppCompatActivity() {
             val intent = Intent(this@CameraActivity, TrueActivity::class.java)
             intent.putExtra(TrueActivity.EXTRA_POSITION, position)
             startActivity(intent)
+            finish()
         } else {
             val intent = Intent(this@CameraActivity, FalseActivity::class.java)
             startActivity(intent)
@@ -169,6 +173,13 @@ class CameraActivity : AppCompatActivity() {
 
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this@CameraActivity,DetailActivity::class.java)
+        intent.putExtra(DetailActivity.EXTRA_POSITION, position)
+        startActivity(intent)
+        finish()
     }
 
     companion object {

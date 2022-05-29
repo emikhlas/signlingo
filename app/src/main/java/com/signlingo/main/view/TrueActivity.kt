@@ -20,6 +20,7 @@ class TrueActivity : AppCompatActivity() {
             val intent = Intent(this@TrueActivity, DetailActivity::class.java)
             intent.putExtra(DetailActivity.EXTRA_POSITION, position + 1)
             startActivity(intent)
+            finish()
         }
     }
 

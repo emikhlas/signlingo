@@ -83,9 +83,9 @@ class CameraActivity : AppCompatActivity() {
         for(i in 0 until imageSize){
             for(j in 0 until imageSize){
                 val value = intValues[pixel++]
-                byteBuffer.putFloat((value shr 16 and 0xFF) * (1f / 1))
-                byteBuffer.putFloat((value shr 8 and 0xFF) * (1f / 1))
-                byteBuffer.putFloat((value and 0xFF) * (1f / 1))
+                byteBuffer.putFloat((value shr 16 and 0xFF) * (1f / 255))
+                byteBuffer.putFloat((value shr 8 and 0xFF) * (1f / 255))
+                byteBuffer.putFloat((value and 0xFF) * (1f / 255))
             }
         }
 

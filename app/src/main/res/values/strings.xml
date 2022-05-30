@@ -55,6 +55,7 @@
     <string name="try_now">TRY NOW</string>
     <string name="quiz_desc">Do a quick quiz to test your knowledge</string>
     <string name="quiz">Quick Quiz</string>
+    <string name="cat">Cat Image</string>
 
     <string-array name="data_char">
         <item>A</item>

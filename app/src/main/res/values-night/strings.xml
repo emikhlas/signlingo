@@ -6,4 +6,5 @@
     <string name="image_quiz">Quiz Image</string>
     <string name="error_empty">This field is required!</string>
     <string name="hint_quiz">What letter is it?</string>
+    <string name="cat">Cat Image</string>
 </resources>

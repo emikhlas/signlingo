@@ -17,10 +17,14 @@ class TrueActivity : AppCompatActivity() {
         val position = intent.getIntExtra(EXTRA_POSITION, 0)
 
         binding.btnContinue.setOnClickListener {
-            val intent = Intent(this@TrueActivity, DetailActivity::class.java)
-            intent.putExtra(DetailActivity.EXTRA_POSITION, position + 1)
-            startActivity(intent)
-            finish()
+            if(position == 100) {
+                finish()
+            } else {
+                val intent = Intent(this@TrueActivity, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.EXTRA_POSITION, position + 1)
+                startActivity(intent)
+                finish()
+            }
         }
     }
 

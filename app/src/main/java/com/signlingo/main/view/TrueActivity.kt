@@ -21,9 +21,15 @@ class TrueActivity : AppCompatActivity() {
                 finish()
             } else {
                 val intent = Intent(this@TrueActivity, DetailActivity::class.java)
-                intent.putExtra(DetailActivity.EXTRA_POSITION, position + 1)
-                startActivity(intent)
-                finish()
+                if(position == 25) {
+                    intent.putExtra(DetailActivity.EXTRA_POSITION, 0)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    intent.putExtra(DetailActivity.EXTRA_POSITION, position + 1)
+                    startActivity(intent)
+                    finish()
+                }
             }
         }
     }
